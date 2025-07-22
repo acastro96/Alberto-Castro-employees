@@ -4,19 +4,22 @@ This repository contains the solution for the **Sirma Employee Collaboration Tas
 
 ---
 
-## 📦 Repository Structure
+## Repository Structure
 
 Alberto-Castro-employees/
-│
+
 ├── backend/ # Spring Boot backend (Java 21, Spring Boot 3.2.5)
+
 ├── frontend/ # Angular 20.1.1 standalone frontend
+
 ├── test-suite/ # Sample CSV test files for validating scenarios
+
 └── README.md # General documentation (this file)
 
 
 ---
 
-## 🧠 Solution Overview
+## Solution Overview
 
 The application allows a user to:
 
@@ -28,19 +31,19 @@ The application allows a user to:
 
 ---
 
-## 💡 Key Features
+## Key Features
 
-- ✅ Supports multiple date formats, including:
+- Supports multiple date formats, including:
   - `yyyy-MM-dd`
   - `MM/dd/yyyy`
   - `dd-MM-yyyy`
   - `yyyy/MM/dd`
   - `MMM d, yyyy` (e.g., Jan 1, 2020)
-- ✅ Handles `NULL` values in the `dateTo` field as today's date.
-- ✅ Validates CSV structure and content before backend submission.
-- ✅ Backend processes input concurrently using an `ExecutorService`.
-- ✅ Fully styled Angular Material UI with pagination and responsiveness.
-- ✅ Result grid includes:
+- Handles `NULL` values in the `dateTo` field as today's date.
+- Validates CSV structure and content before backend submission.
+- Backend processes input concurrently using an `ExecutorService`.
+- Fully styled Angular Material UI with pagination and responsiveness.
+- Result grid includes:
   - Employee ID #1
   - Employee ID #2
   - Project(s) in common
@@ -48,37 +51,21 @@ The application allows a user to:
 
 ---
 
-## 🌐 Communication Flow
-
-User
-│
-▼
-Frontend (Angular 20 - localhost:4200)
-│ ↳ Uploads CSV and displays result
-▼
-Backend (Spring Boot - localhost:8080)
-│ ↳ Validates & processes data, returns the pair with most overlap
-▼
-Result displayed in frontend table
-
-
----
-
-## 🧪 Test Files
+## Test Files
 
 The `test-suite/` folder contains 6 CSV files covering:
 
-- ✅ One pair with one project
-- ✅ Two pairs with separate projects
-- ✅ One pair with multiple projects
-- ✅ Five different date formats
-- ✅ Handling of NULL dateTo values
+- One pair with one project
+- Two pairs with separate projects
+- One pair with multiple projects
+- Five different date formats
+- Handling of NULL dateTo values
 
 These can be used for manual testing or as sample inputs for automation.
 
 ---
 
-## 🚀 Running the Project
+## Running the Project
 
 Follow setup instructions inside each subdirectory:
 
@@ -89,8 +76,8 @@ Follow setup instructions inside each subdirectory:
 
 ## 📬 Requirements Compliance
 
-✔ 1) `dateTo` can be `NULL`, treated as today  
-✔ 2) Input data must be uploaded from a CSV file  
-✔ 3) Solution is hosted on GitHub with proper structure  
+1. `dateTo` can be `NULL`, treated as today  
+2. Input data must be uploaded from a CSV file  
+3. Solution is hosted on GitHub with proper structure  
   ➡ Repository: `Alberto-Castro-employees`  
   ➡ Contains backend, frontend, and test-suite folders  
