@@ -1,0 +1,90 @@
+.table-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  padding: 0 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-wrapper {
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 8px;
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.mat-header-cell,
+td.mat-cell {
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+mat-paginator {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .table-wrapper {
+    max-width: 100%;
+    font-size: 12px;
+  }
+
+  th.mat-header-cell,
+  td.mat-cell {
+    padding: 6px;
+  }
+}
+
+.banner {
+  background-color: #0a3663;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #444;
+  text-align: justify;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 12px;
+}
+
+.upload-section h2 {
+  margin-bottom: 10px;
+}
+
